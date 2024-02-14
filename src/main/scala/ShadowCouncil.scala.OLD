@@ -1,0 +1,241 @@
+package shadow_council
+// WARNING: this is dead code kept around for reference. This implementation breaks everything into mmio regs for maximum "can't mess this up"-ness but basically impoossible to do anything reasonable on this.
+
+import shadow_council.OneFiftyOneCtrlRegs._
+
+import chisel3._
+import chisel3.util._
+import org.chipsalliance.cde.config.{Parameters, Field, Config}
+import freechips.rocketchip.subsystem.{BaseSubsystem, CacheBlockBytes}
+import org.chipsalliance.cde.config.{Parameters, Field, Config}
+import freechips.rocketchip.diplomacy._
+import freechips.rocketchip.tilelink._
+import chisel3.experimental.{IntParam, BaseModule}
+import freechips.rocketchip.prci._
+import freechips.rocketchip.regmapper._
+import freechips.rocketchip.util.UIntIsOneOf
+
+// IO Declarations
+case object ShadowCouncilKey extends Field[Option[ShadowCouncilParams]](None)
+case class ShadowCouncilParams(
+    address: BigInt = 0x7000
+)
+
+class ShadowCouncilTopIO() extends Bundle {}
+
+class ShadowCouncil(params: ShadowCouncilParams, beatBytes: Int)(implicit
+    p: Parameters
+) extends ClockSinkDomain(ClockSinkParameters())(p) {
+  val mmio_device =
+    new SimpleDevice("ShadowCouncil", Seq("ucbbar,ShadowCouncil"))
+  val mmio_node = TLRegisterNode(
+    Seq(AddressSet(params.address, 0xfff)),
+    mmio_device,
+    "reg/control",
+    beatBytes = beatBytes
+  )
+
+  override lazy val module = new ShadowCouncilModuleImp()
+
+  class ShadowCouncilModuleImp extends Impl {
+    val io = IO(new ShadowCouncilTopIO)
+
+    // TODO don't hardcode this here, use the verilog header
+    // TODO allow multiple 151 chips, and mux between them?
+    withClockAndReset(clock, reset) {
+
+      // TODO this shouldn't need a clock, since we're clocking it with an explicit IO reg
+      // this seems to be required for firtool compilation (complains about "No implicit clock."
+      val core = Module(
+        new OneFiftyOneCoreBlackBox(
+          OneFiftyOneCoreParams()
+        )
+      )
+
+      // Define regsiters for inputs to the core
+      // Having the clock be an io for now instead of sharing the TL clock, less performant but easier to debug
+      val core_clk = RegInit(0.U(1.W))
+      val core_reset = RegInit(1.U(1.W))
+      val core_mem_req_ready = RegInit(0.U(1.W))
+      val core_mem_req_data_ready = RegInit(0.U(1.W))
+      val core_mem_resp_valid = RegInit(0.U(1.W))
+      val core_mem_resp_tag = RegInit(0.U(REG_WIDTH(MEM_REQ_TAG).W))
+      val core_mem_resp_data_msb = RegInit(0.U(REG_WIDTH(MEM_RESP_DATA_MSB).W))
+      val core_mem_resp_data_lsb = RegInit(0.U(REG_WIDTH(MEM_RESP_DATA_LSB).W))
+
+      // Hook write registers up to blackbox
+      core.io.clk := core_clk
+      core.io.reset := core_reset
+      core.io.mem_req_ready := core_mem_req_ready
+      core.io.mem_req_data_ready := core_mem_req_ready
+      core.io.mem_resp_valid := core_mem_resp_valid
+      core.io.mem_resp_tag := core_mem_resp_tag
+      core.io.mem_resp_data := Cat(
+        core_mem_resp_data_msb,
+        core_mem_resp_data_lsb
+      )
+
+      //  TODO put this behind a debug flag
+      when(true.B) { // Always true for every clock cycle
+        printf(
+          "CLK at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(CLK).U,
+          core_clk
+        );
+        printf(
+          "RESET at 0x%x: core_reset=%d core.io.reset=%d\n",
+          params.address.U + REGMAP_OFFSET(RESET).U,
+          core_reset,
+          core.io.reset
+        );
+        printf(
+          "MEM_REQ_VALID at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_REQ_VALID).U,
+          core.io.mem_req_valid
+        );
+        printf(
+          "MEM_REQ_READY at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_REQ_READY).U,
+          core.io.mem_req_ready
+        );
+        printf(
+          "MEM_REQ_RW at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_REQ_RW).U,
+          core.io.mem_req_rw
+        );
+        printf(
+          "MEM_REQ_DATA_VALID at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_REQ_DATA_VALID).U,
+          core.io.mem_req_data_valid
+        );
+        printf(
+          "MEM_REQ_DATA_READY at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_REQ_DATA_READY).U,
+          core.io.mem_req_data_ready
+        );
+        printf(
+          "MEM_RESP_VALID at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_RESP_VALID).U,
+          core.io.mem_resp_valid
+        );
+        printf(
+          "MEM_REQ_ADDR at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_REQ_ADDR).U,
+          core.io.mem_req_addr
+        );
+        printf(
+          "MEM_REQ_TAG at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_REQ_TAG).U,
+          core.io.mem_req_tag
+        );
+        printf(
+          "MEM_REQ_DATA_BITS at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_REQ_DATA_BITS_LSB).U,
+          core.io.mem_req_data_bits
+        );
+        printf(
+          "MEM_REQ_DATA_MASK at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_REQ_DATA_MASK).U,
+          core.io.mem_req_data_mask
+        );
+        printf(
+          "MEM_RESP_TAG at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_RESP_TAG).U,
+          core.io.mem_resp_tag
+        );
+        printf(
+          "MEM_RESP_DATA at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(MEM_REQ_DATA_BITS_LSB).U,
+          core.io.mem_resp_data
+        );
+        printf(
+          "CSR at 0x%x: %d\n",
+          params.address.U + REGMAP_OFFSET(CSR).U,
+          core.io.csr
+        );
+      }
+
+      // Instantiate TileLink communication module
+
+      mmio_node.regmap( // TODO we can pack all the 1 bit signals into one 8 bit register (just have a seq of multiple regfields)
+        REGMAP_OFFSET(CLK) -> Seq(RegField.w(REG_WIDTH(CLK), core_clk)),
+        REGMAP_OFFSET(RESET) -> Seq(
+          RegField.w(REG_WIDTH(RESET), core_reset)
+        ),
+        REGMAP_OFFSET(MEM_REQ_VALID) -> Seq(
+          RegField.r(REG_WIDTH(MEM_REQ_VALID), core.io.mem_req_valid)
+        ),
+        REGMAP_OFFSET(MEM_REQ_READY) -> Seq(
+          RegField.w(REG_WIDTH(MEM_REQ_READY), core_mem_req_ready)
+        ),
+        REGMAP_OFFSET(MEM_REQ_RW) -> Seq(
+          RegField.r(REG_WIDTH(MEM_REQ_RW), core.io.mem_req_rw)
+        ),
+        REGMAP_OFFSET(MEM_REQ_DATA_VALID) -> Seq(
+          RegField.r(REG_WIDTH(MEM_REQ_DATA_VALID), core.io.mem_req_data_valid)
+        ),
+        REGMAP_OFFSET(MEM_REQ_DATA_READY) -> Seq(
+          RegField.w(REG_WIDTH(MEM_REQ_DATA_READY), core_mem_req_data_ready)
+        ),
+        REGMAP_OFFSET(MEM_RESP_VALID) -> Seq(
+          RegField.w(REG_WIDTH(MEM_RESP_VALID), core_mem_resp_valid)
+        ),
+        REGMAP_OFFSET(MEM_REQ_ADDR) -> Seq(
+          RegField.r(REG_WIDTH(MEM_REQ_ADDR), core.io.mem_req_addr)
+        ),
+        REGMAP_OFFSET(MEM_REQ_TAG) -> Seq(
+          RegField.r(REG_WIDTH(MEM_REQ_TAG), core.io.mem_req_tag)
+        ),
+        REGMAP_OFFSET(MEM_REQ_DATA_BITS_LSB) -> Seq(
+          RegField
+            .r(
+              REG_WIDTH(MEM_REQ_DATA_BITS_LSB),
+              core.io.mem_req_data_bits(128 - 1, 128 / 2)
+            )
+        ),
+        REGMAP_OFFSET(MEM_REQ_DATA_BITS_MSB) -> Seq(
+          RegField
+            .r(
+              REG_WIDTH(MEM_REQ_DATA_BITS_MSB),
+              core.io.mem_req_data_bits(128 / 2 - 1, 0)
+            )
+        ),
+        REGMAP_OFFSET(MEM_REQ_DATA_MASK) -> Seq(
+          RegField.r(REG_WIDTH(MEM_REQ_DATA_MASK), core.io.mem_req_data_mask)
+        ),
+        REGMAP_OFFSET(MEM_RESP_TAG) -> Seq(
+          RegField.w(REG_WIDTH(MEM_RESP_TAG), core_mem_resp_tag)
+        ),
+        REGMAP_OFFSET(MEM_RESP_DATA_MSB) -> Seq(
+          RegField.w(REG_WIDTH(MEM_RESP_DATA_MSB), core_mem_resp_data_msb)
+        ),
+        REGMAP_OFFSET(MEM_RESP_DATA_LSB) -> Seq(
+          RegField.w(REG_WIDTH(MEM_RESP_DATA_LSB), core_mem_resp_data_lsb)
+        ),
+        REGMAP_OFFSET(CSR) -> Seq(RegField.r(REG_WIDTH(CSR), core.io.csr))
+      )
+    }
+
+  }
+}
+
+trait CanHavePeripheryShadowCouncil { this: BaseSubsystem =>
+  implicit val p: Parameters
+  p(ShadowCouncilKey).map { params =>
+    val shadow_council =
+      LazyModule(new ShadowCouncil(params, pbus.beatBytes)(p))
+
+    shadow_council.clockNode := pbus.fixedClockNode
+    pbus.coupleTo("ShadowCouncil-MMIO") {
+      shadow_council.mmio_node := TLFragmenter(
+        pbus.beatBytes,
+        pbus.blockBytes
+      ) := _
+    }
+  }
+}
+
+class WithShadowCouncil(params: ShadowCouncilParams)
+    extends Config((site, here, up) => { case ShadowCouncilKey =>
+      Some(params)
+    })
