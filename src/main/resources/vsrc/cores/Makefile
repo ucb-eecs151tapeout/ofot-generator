@@ -10,6 +10,7 @@ proj_name = kevin-kore
 # TODO: better way  to do this
 #sram_dir = "/home/ff/eecs251b/sky130/sram22_sky130_macros"
 sram_dir = "/scratch/ee198-20-tab/sram22_sky130_macros" 
+# TODO: 
 
   # this is tuning wmask to a wire rather than a 1 width bus in sram22_64x24m4w24 bc it is otherwise incompatible with the lib
 	# NOTE  for some reason it looks like it's inserting a space after sram_dir which breaks the paths. not sure why, manually fixing for now
@@ -64,7 +65,10 @@ $(PREPROC_VERILOG): $(ALL_VSRCS)
 	#printf "\`define no_cache_mem\n" | cat - $@ > temp && mv temp $@
 	# TODO someone make these paths not hardcoded, these are the SRAMs that are used in the design
 	# include SRAM verilog file at the top of the preprocessed file
-	printf $(sram_include_str) | cat - $@ > temp && mv temp $@
+	# don't include them now since they will prevent 
+	echo "TODO: SRAM includes should be done in the generator rather than here, so they can be only included for sim based on the sim flag passed to the generator"
+	echo "WARNING: not including sram verilog. This design won't simulate, but it will synthesize. Uncomment the line below this for the opposite behavior"
+	# printf $(sram_include_str) | cat - $@ > temp && mv temp $@
 
 
 	# FIXME FIXME FIXME getting into sketch hack territory here
