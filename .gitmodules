@@ -1,0 +1,3 @@
+[submodule "src/main/resources/vsrc/cores/asic-project-fa24-jonathan-kevin"]
+	path = src/main/resources/vsrc/cores/asic-project-fa24-jonathan-kevin
+	url = https://github.com/EECS-151/asic-project-fa24-jonathan-kevin.git
