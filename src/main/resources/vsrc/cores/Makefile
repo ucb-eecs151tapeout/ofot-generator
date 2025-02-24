@@ -6,7 +6,7 @@
 
 # name of output pre-processed verilog file
 vsrc_dir =$(abspath ./)
-proj_name = kevin-kore
+proj_name = EECS151-Fa24-ASIC-Project
 # TODO: better way  to do this
 #sram_dir = "/home/ff/eecs251b/sky130/sram22_sky130_macros"
 sram_dir = "/scratch/ee198-20-tab/sram22_sky130_macros" 

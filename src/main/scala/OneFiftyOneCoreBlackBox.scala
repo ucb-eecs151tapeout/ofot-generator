@@ -8,7 +8,7 @@ import freechips.rocketchip.rocket.MulDivParams
 import freechips.rocketchip.tile.FPUParams
 
 case class OneFiftyOneCoreParams(
-    val projectName: String = "kevin-kore",
+    val projectName: String = "EECS151-Fa24-ASIC-Project",
     val MEM_ADDR_BITS: Int = REG_WIDTH(MEM_REQ_ADDR),
     val MEM_TAG_BITS: Int = REG_WIDTH(MEM_REQ_TAG),
     val MEM_DATA_BITS: Int = MEM_REQ_DATA_BITS_WIDTH,
