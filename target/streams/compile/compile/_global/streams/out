@@ -1,0 +1,35 @@
+[0m[[0m[33mwarn[0m] [0m[0m/scratch/ee198-20-aad/chipyard/ofot-chipyard/generators/ofo/src/main/scala/OFOTile.scala:59:18: type SimpleDevice in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.SimpleDevice[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val cpuDevice: SimpleDevice =[0m
+[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/scratch/ee198-20-aad/chipyard/ofot-chipyard/generators/ofo/src/main/scala/OFOTile.scala:60:9: type SimpleDevice in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.SimpleDevice[0m
+[0m[[0m[33mwarn[0m] [0m[0m    new SimpleDevice([0m
+[0m[[0m[33mwarn[0m] [0m[0m        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/scratch/ee198-20-aad/chipyard/ofot-chipyard/generators/ofo/src/main/scala/OFOTile.scala:64:34: value ResourceAnchors in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.ResourceAnchors[0m
+[0m[[0m[33mwarn[0m] [0m[0m      override def parent = Some(ResourceAnchors.cpus)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/scratch/ee198-20-aad/chipyard/ofot-chipyard/generators/ofo/src/main/scala/OFOTile.scala:65:40: type ResourceBindings in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.ResourceBindings[0m
+[0m[[0m[33mwarn[0m] [0m[0m      override def describe(resources: ResourceBindings): Description = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/scratch/ee198-20-aad/chipyard/ofot-chipyard/generators/ofo/src/main/scala/OFOTile.scala:65:59: type Description in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.Description[0m
+[0m[[0m[33mwarn[0m] [0m[0m      override def describe(resources: ResourceBindings): Description = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/scratch/ee198-20-aad/chipyard/ofot-chipyard/generators/ofo/src/main/scala/OFOTile.scala:67:9: value Description in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.Description[0m
+[0m[[0m[33mwarn[0m] [0m[0m        Description([0m
+[0m[[0m[33mwarn[0m] [0m[0m        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/scratch/ee198-20-aad/chipyard/ofot-chipyard/generators/ofo/src/main/scala/OFOTile.scala:100:10: type SimpleDevice in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.SimpleDevice[0m
+[0m[[0m[33mwarn[0m] [0m[0m     new SimpleDevice(s"${params.core.projectName}_regs",  [0m
+[0m[[0m[33mwarn[0m] [0m[0m         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/scratch/ee198-20-aad/chipyard/ofot-chipyard/generators/ofo/src/main/scala/OFOTile.scala:115:3: method DisableMonitors in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library[0m
+[0m[[0m[33mwarn[0m] [0m[0m  DisableMonitors { implicit p => tlSlaveXbar.node :*= slaveNode }[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/scratch/ee198-20-aad/chipyard/ofot-chipyard/generators/ofo/src/main/scala/OFOTile.scala:125:3: value ResourceBinding in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.ResourceBinding[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ResourceBinding {[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/scratch/ee198-20-aad/chipyard/ofot-chipyard/generators/ofo/src/main/scala/OFOTile.scala:126:5: value Resource in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.Resource[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Resource(cpuDevice, "reg").bind(ResourceAddress(tileId))[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/scratch/ee198-20-aad/chipyard/ofot-chipyard/generators/ofo/src/main/scala/OFOTile.scala:126:37: value ResourceAddress in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.ResourceAddress[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Resource(cpuDevice, "reg").bind(ResourceAddress(tileId))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m23 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0m12 warnings found[0m

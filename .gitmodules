@@ -1,0 +1,3 @@
+[submodule "src/main/resources/vsrc/cores/151core"]
+	path = src/main/resources/vsrc/cores/151core
+	url = https://github.com/mand34656y/151core.git
