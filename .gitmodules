@@ -1,0 +1,6 @@
+[submodule "src/main/resources/vsrc/cores/asic-project-fa24-angle"]
+	path = src/main/resources/vsrc/cores/asic-project-fa24-angle
+	url = git@github.com:EECS-151/asic-project-fa24-angle.git
+[submodule "src/main/resources/vsrc/cores/EECS151-Fa24-ASIC-Project"]
+	path = src/main/resources/vsrc/cores/EECS151-Fa24-ASIC-Project
+	url = git@github.com:jimfangx/EECS151-Fa24-ASIC-Project.git
