@@ -52,14 +52,16 @@ INC_DIRS = $(VLOG_DIR)/
 # Pre-process using custom script to replace the includes (but leave rest unaffected)
 #########################################################################################
 
+# Note: Comments have to be untabbed to not get printed out and flood log
+
 PREPROC_SCRIPT = $(vsrc_dir)/../../../../../../../scripts/insert-includes.py
 
 $(PREPROC_VERILOG): $(ALL_VSRCS)
 	rm -rf combined.v
 	mkdir -p $(dir $(PREPROC_VERILOG))
 
-# Elam: "Don't include testbenches in the verilog because I'm lazy and don't want to 
-# fix the msb/lsb thing in them and we won't use them anyways"
+# elam: "Don't include testbenches in the verilog because I'm lazy [fake news] and don't want to 
+# fix the msb/lsb thing in them and we won't use them anyways" - 
 	touch combined.v
 	find $(ALL_VSRCS) | grep -iv test | xargs -I{} sh -c "cat {}; echo ''" >> combined.v
 
@@ -90,18 +92,19 @@ $(PREPROC_VERILOG): $(ALL_VSRCS)
 ## More realistically, since we're only doing a few cores at most, 
 # could just go back to making multiple classes manually?
 # I think that's most reasonable right now.
-## Hence I ignore this for now.. >_<
+## Hence I ignore this for now.. >_< but leaving it as easter hunt for anyone who reads this ig.
 
 	$(PREPROC_SCRIPT) combined.v $@ $(INC_DIRS)
 
 # Disable the cache for easier initial tilelink interface setup/debuggin
-# TODO this breaks sim, see README (but the README is long gone oops - ask elam)
+# TODO this breaks sim, see README (but the README is long gone and i forgor oops - ask elam)
+# I think can leave it disabled for both sim and syn
 # printf "\`define no_cache_mem\n" | cat - $@ > temp && mv temp $@
 
 # Include SRAM Verilog file, if any, at the top of the preprocessed file
 	printf $(sram_include_str) | cat - $@ > temp && mv temp $@
 
-# FIXME FIXME FIXME getting into sketch hack territory here
+# "FIXME FIXME FIXME getting into sketch hack territory here" - elam
 # This causes a width mismatch
 	sed -i 's/`define CACHE_DEPTH_BITS_IMEM 7/`define CACHE_DEPTH_BITS_IMEM 6/g' $@
 
