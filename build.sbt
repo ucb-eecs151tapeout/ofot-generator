@@ -8,11 +8,11 @@ Compile / compile := {
   val makefileDir = baseDirectory.value / "src/main/resources/vsrc/cores"
 
   // Set RUN_TYPE as an argument if Makefile can access it
-  val exitCode = Process("make RUN_TYPE=" + runTypeFlag, makefileDir).!
+  //val exitCode = Process("make RUN_TYPE=" + runTypeFlag, makefileDir).!
 
-  if (exitCode != 0) {
-    sys.error(s"OFO Verilog preprocessor Makefile execution failed in ${makefileDir}")
-  }
+  //if (exitCode != 0) {
+  //  sys.error(s"OFO Verilog preprocessor Makefile execution failed in ${makefileDir}")
+  //}
 
   // Call the original compile task after the preprocessor step
   (Compile / compile).value

@@ -19,7 +19,7 @@ PREPROC_VERILOG = $(vsrc_dir)/$(PROJ_NAME).preprocessed.v
 default: $(PREPROC_VERILOG)
 
 # Collateral path
-sram_dir = "/scratch/ee198-20-tab/sram22_sky130_macros"
+sram_dir = "/home/ff/ee198/ee198-20/sky130_col/sram22_sky130_macros"
 ifeq ($(MACHINE_NAME),bwrc)
 $(info "############ switched to bwrc settings ############")
 	sram_dir = "/home/ff/eecs251b/sky130/sram22_sky130_macros"
@@ -29,7 +29,7 @@ endif
 sram_include_str = ""
 ifeq ($(RUN_TYPE),sim)
 $(info  "############ switched to sim settings ############")
-	sram_include_str = "\`include \"$(sram_dir)/sram22_256x32m4w8/sram22_256x32m4w8.v\"\n\`include \"$(sram_dir)/sram22_64x32m4w8/sram22_64x32m4w8.v\"\n\`include \"$(sram_dir)/sram22_512x64m4w8/sram22_512x64m4w8.v\"\n\`include \"$(sram_dir)/sram22_64x24m4w24/sram22_64x24m4w24.v\"\n"
+	sram_include_str = "\`include \"$(sram_dir)/sram22_256x32m4w8/sram22_256x32m4w8.v\"\n\`include \"$(sram_dir)/sram22_64x32m4w8/sram22_64x32m4w8.v\"\n\`include \"$(sram_dir)/sram22_512x64m4w8/sram22_512x64m4w8.v\"\n\`include \"$(sram_dir)/sram22_64x24m4w8/sram22_64x24m4w8.v\"\n"
 endif
 ## Notes from elam:
 # This is tuning wmask to a wire rather than a 1 width bus in sram22_64x24m4w24 bc it is otherwise incompatible with the lib
