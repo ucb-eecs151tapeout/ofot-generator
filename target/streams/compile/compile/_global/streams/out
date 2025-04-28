@@ -1,0 +1,31 @@
+[0m[[0m[31merror[0m] [0m[0m/scratch/ee198-20-aae/ofot-chipyard/generators/ofo/src/main/scala/OFOConfigs.scala:7:8: not found: object testchipip[0m
+[0m[[0m[31merror[0m] [0m[0mimport testchipip._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/scratch/ee198-20-aae/ofot-chipyard/generators/ofo/src/main/scala/OFOConfigs.scala:8:8: not found: object chipyard[0m
+[0m[[0m[31merror[0m] [0m[0mimport chipyard.config._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/scratch/ee198-20-aae/ofot-chipyard/generators/ofo/src/main/scala/OFOConfigs.scala:9:8: not found: object testchipip[0m
+[0m[[0m[31merror[0m] [0m[0mimport testchipip.serdes.WithSerialTLMem[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/scratch/ee198-20-aae/ofot-chipyard/generators/ofo/src/main/scala/OFOConfigs.scala:52:9: not found: value testchipip[0m
+[0m[[0m[31merror[0m] [0m[0m    new testchipip.soc.WithNoScratchpads ++[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/scratch/ee198-20-aae/ofot-chipyard/generators/ofo/src/main/scala/OFOConfigs.scala:55:9: not found: value testchipip[0m
+[0m[[0m[31merror[0m] [0m[0m    new testchipip.serdes.WithSerialTLMem(size = ( 1024 * 1024 * 1024)) ++ // 4) Configure the off-chip memory accessible over serial-tl as backing memory[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/scratch/ee198-20-aae/ofot-chipyard/generators/ofo/src/main/scala/OFOConfigs.scala:55:43: not found: value size[0m
+[0m[[0m[31merror[0m] [0m[0m    new testchipip.serdes.WithSerialTLMem(size = ( 1024 * 1024 * 1024)) ++ // 4) Configure the off-chip memory accessible over serial-tl as backing memory[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/scratch/ee198-20-aae/ofot-chipyard/generators/ofo/src/main/scala/OFOConfigs.scala:61:9: not found: value testchipip[0m
+[0m[[0m[31merror[0m] [0m[0m    new testchipip.soc.WithOffchipBusClient(MBUS) ++                                      // offchip bus connects to MBUS, since the serial-tl needs to provide backing memory[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/scratch/ee198-20-aae/ofot-chipyard/generators/ofo/src/main/scala/OFOConfigs.scala:64:9: not found: value testchipip[0m
+[0m[[0m[31merror[0m] [0m[0m    new testchipip.soc.WithOffchipBus ++    [0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/scratch/ee198-20-aae/ofot-chipyard/generators/ofo/src/main/scala/OFOConfigs.scala:66:9: not found: value chipyard[0m
+[0m[[0m[31merror[0m] [0m[0m    new chipyard.config.WithBroadcastManager ++ // 8) Replace L2 with a broadcast hub for coherence[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/scratch/ee198-20-aae/ofot-chipyard/generators/ofo/src/main/scala/OFOConfigs.scala:69:9: not found: value chipyard[0m
+[0m[[0m[31merror[0m] [0m[0m    new chipyard.config.AbstractConfig[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m10 errors found[0m
