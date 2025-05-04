@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+import os
+
+from hammer.vlsi import CLIDriver, HammerTool, HammerToolHookAction
+
+from typing import Dict, Callable, Optional, List
+
+def global_power(x: HammerTool) -> bool:
+    x.append('''
+        set_db init_power_nets {VDD}
+        set_db init_ground_nets {VSS}
+        connect_global_net VDD -type pg_pin -pin vdd -override
+        connect_global_net VSS -type pg_pin -pin vss -override
+    ''')
+    return True
+
+class ProjectDriver(CLIDriver):
+    def get_extra_par_hooks(self) -> List[HammerToolHookAction]:
+        extra_hooks = [            
+            HammerTool.make_post_insertion_hook("floorplan_design", global_power)
+        ]
+        return extra_hooks
+
+if __name__ == '__main__':
+    ProjectDriver().main()

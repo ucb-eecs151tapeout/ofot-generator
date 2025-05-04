@@ -15,12 +15,20 @@ endif
 
 all: $(TESTS_HEX)
 
+# %.hex: riscv-tests/isa/rv32ui/%.S
+# 	$(RISCV)-gcc $(GCC_OPTS) -Ienv_151 -Iriscv-tests/env -Iriscv-tests/isa/macros/scalar $^ -o $(basename $(notdir $^)).elf
+# 	$(RISCV)-objdump -D -Mnumeric $(basename $(notdir $^)).elf > $(basename $@).dump
+# 	$(RISCV)-objcopy $(basename $@).elf -O binary $(basename $@).bin
+# 	$(RISCV)-bin2hex -w 128 $(basename $@).bin $(basename $@).hex
+# 	../init.sh $(basename $@).hex
+
 %.hex: riscv-tests/isa/rv32ui/%.S
-	$(RISCV)-gcc $(GCC_OPTS) -Ienv_151 -Iriscv-tests/env -Iriscv-tests/isa/macros/scalar $^ -o $(basename $(notdir $^)).elf
-	$(RISCV)-objdump -D -Mnumeric $(basename $(notdir $^)).elf > $(basename $@).dump
-	$(RISCV)-objcopy $(basename $@).elf -O binary $(basename $@).bin
-	$(RISCV)-bin2hex -w 128 $(basename $@).bin $(basename $@).hex
-	../init.sh $(basename $@).hex
+	$(RISCV)-gcc $(GCC_OPTS) -Ienv_151 -Iriscv-tests/env -Iriscv-tests/isa/macros/scalar $^ -o asm/$(basename $(notdir $^)).elf
+	$(RISCV)-objdump -D -Mnumeric asm/$(basename $(notdir $^)).elf > asm/$(basename $@).dump
+	$(RISCV)-objcopy asm/$(basename $(notdir $^)).elf -O binary asm/$(basename $@).bin
+	$(RISCV)-bin2hex -w 128 asm/$(basename $@).bin asm/$(basename $@).hex
+	../init.sh asm/$(basename $@).hex
+
 
 clean:
 	rm -f *.elf *.bin *.hex *.dump

@@ -31,6 +31,8 @@ module Memory151(
   input [`MEM_TAG_BITS-1:0]    mem_resp_tag
 
 );
+reg [127:0] memory [0:1023];  // 你可以根據需要調整大小
+
 
 wire i_stall_n;
 wire d_stall_n;
@@ -47,6 +49,10 @@ wire [`MEM_ADDR_BITS-1:0]  dc_mem_req_addr;
 wire dc_mem_resp_valid;
 
 wire [(`MEM_DATA_BITS/8)-1:0]  dc_mem_req_mask;
+
+task load_memory(string filename);
+  $readmemh(filename, memory);  // 注意是memory，不要加scope
+endtask
 
 `ifdef no_cache_mem
 no_cache_mem icache (
@@ -150,4 +156,30 @@ riscv_arbiter arbiter (
 );
 `endif
 
+// `else
+// no_cache_mem icache (
+//   .clk(clk),
+//   .reset(reset),
+//   .cpu_req_valid(icache_re),
+//   .cpu_req_ready(i_stall_n),
+//   .cpu_req_addr(icache_addr[31:2]),
+//   .cpu_req_data(), // core does not write to icache
+//   .cpu_req_write(4'b0), // never write
+//   .cpu_resp_valid(),
+//   .cpu_resp_data(icache_dout)
+// );
+
+// no_cache_mem dcache (
+//   .clk(clk),
+//   .reset(reset),
+//   .cpu_req_valid((| dcache_we) || dcache_re),
+//   .cpu_req_ready(d_stall_n),
+//   .cpu_req_addr(dcache_addr[31:2]),
+//   .cpu_req_data(dcache_din),
+//   .cpu_req_write(dcache_we),
+//   .cpu_resp_valid(),
+//   .cpu_resp_data(dcache_dout)
+// );
+// assign stall =  ~i_stall_n || ~d_stall_n;
+// `endif
 endmodule

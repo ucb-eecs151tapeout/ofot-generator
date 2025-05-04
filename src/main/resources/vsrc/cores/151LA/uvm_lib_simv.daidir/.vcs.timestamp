@@ -1,0 +1,892 @@
+561      
+0 uvm_macros.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/uvm_macros.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_macros.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/uvm_macros.svh
+0 macros/uvm_version_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/macros/uvm_version_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/macros/uvm_version_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/macros/uvm_version_defines.svh
+0 macros/uvm_message_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/macros/uvm_message_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/macros/uvm_message_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/macros/uvm_message_defines.svh
+0 macros/uvm_phase_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/macros/uvm_phase_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/macros/uvm_phase_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/macros/uvm_phase_defines.svh
+0 macros/uvm_object_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/macros/uvm_object_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/macros/uvm_object_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/macros/uvm_object_defines.svh
+0 macros/uvm_printer_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/macros/uvm_printer_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/macros/uvm_printer_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/macros/uvm_printer_defines.svh
+0 macros/uvm_tlm_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/macros/uvm_tlm_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/macros/uvm_tlm_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/macros/uvm_tlm_defines.svh
+0 tlm1/uvm_tlm_imps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_tlm_imps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_tlm_imps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_tlm_imps.svh
+0 macros/uvm_sequence_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/macros/uvm_sequence_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/macros/uvm_sequence_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/macros/uvm_sequence_defines.svh
+0 macros/uvm_callback_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/macros/uvm_callback_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/macros/uvm_callback_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/macros/uvm_callback_defines.svh
+0 macros/uvm_reg_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/macros/uvm_reg_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/macros/uvm_reg_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/macros/uvm_reg_defines.svh
+0 macros/uvm_deprecated_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/macros/uvm_deprecated_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/macros/uvm_deprecated_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/macros/uvm_deprecated_defines.svh
+0 directc/uvm_directc.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/directc/uvm_directc.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/directc/uvm_directc.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/directc/uvm_directc.svh
+0 directc/uvm_seed.vh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/directc/uvm_seed.vh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/directc/uvm_seed.vh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/directc/uvm_seed.vh
+0 dpi/uvm_dpi.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/dpi/uvm_dpi.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/dpi/uvm_dpi.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/dpi/uvm_dpi.svh
+0 dpi/uvm_hdl.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/dpi/uvm_hdl.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/dpi/uvm_hdl.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/dpi/uvm_hdl.svh
+0 dpi/uvm_svcmd_dpi.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/dpi/uvm_svcmd_dpi.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/dpi/uvm_svcmd_dpi.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/dpi/uvm_svcmd_dpi.svh
+0 dpi/uvm_regex.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/dpi/uvm_regex.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/dpi/uvm_regex.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/dpi/uvm_regex.svh
+0 base/uvm_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_base.svh
+0 base/uvm_version.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_version.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_version.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_version.svh
+0 base/uvm_object_globals.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_object_globals.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_object_globals.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_object_globals.svh
+0 base/uvm_misc.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_misc.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_misc.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_misc.svh
+0 base/uvm_object.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_object.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_object.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_object.svh
+0 base/uvm_pool.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_pool.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_pool.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_pool.svh
+0 base/uvm_queue.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_queue.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_queue.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_queue.svh
+0 base/uvm_factory.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_factory.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_factory.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_factory.svh
+0 base/uvm_registry.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_registry.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_registry.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_registry.svh
+0 base/uvm_spell_chkr.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_spell_chkr.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_spell_chkr.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_spell_chkr.svh
+0 base/uvm_resource.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_resource.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_resource.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_resource.svh
+0 deprecated/uvm_resource_converter.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/deprecated/uvm_resource_converter.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/deprecated/uvm_resource_converter.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/deprecated/uvm_resource_converter.svh
+0 base/uvm_resource_specializations.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_resource_specializations.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_resource_specializations.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_resource_specializations.svh
+0 base/uvm_resource_db.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_resource_db.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_resource_db.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_resource_db.svh
+0 base/uvm_config_db.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_config_db.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_config_db.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_config_db.svh
+0 base/uvm_printer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_printer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_printer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_printer.svh
+0 base/uvm_comparer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_comparer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_comparer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_comparer.svh
+0 base/uvm_packer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_packer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_packer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_packer.svh
+0 base/uvm_recorder.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_recorder.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_recorder.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_recorder.svh
+0 base/uvm_event_callback.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_event_callback.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_event_callback.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_event_callback.svh
+0 base/uvm_event.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_event.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_event.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_event.svh
+0 base/uvm_barrier.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_barrier.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_barrier.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_barrier.svh
+0 base/uvm_callback.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_callback.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_callback.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_callback.svh
+0 base/uvm_report_catcher.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_report_catcher.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_report_catcher.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_report_catcher.svh
+0 base/uvm_report_server.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_report_server.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_report_server.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_report_server.svh
+0 base/uvm_report_handler.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_report_handler.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_report_handler.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_report_handler.svh
+0 base/uvm_report_object.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_report_object.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_report_object.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_report_object.svh
+0 base/uvm_transaction.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_transaction.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_transaction.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_transaction.svh
+0 base/uvm_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_phase.svh
+0 base/uvm_domain.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_domain.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_domain.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_domain.svh
+0 base/uvm_bottomup_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_bottomup_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_bottomup_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_bottomup_phase.svh
+0 base/uvm_topdown_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_topdown_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_topdown_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_topdown_phase.svh
+0 base/uvm_task_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_task_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_task_phase.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_task_phase.svh
+0 base/uvm_common_phases.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_common_phases.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_common_phases.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_common_phases.svh
+0 base/uvm_runtime_phases.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_runtime_phases.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_runtime_phases.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_runtime_phases.svh
+0 base/uvm_component.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_component.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_component.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_component.svh
+0 base/uvm_root.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_root.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_root.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_root.svh
+0 base/uvm_objection.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_objection.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_objection.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_objection.svh
+0 base/uvm_heartbeat.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_heartbeat.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_heartbeat.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_heartbeat.svh
+0 base/uvm_globals.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_globals.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_globals.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_globals.svh
+0 base/uvm_cmdline_processor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_cmdline_processor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_cmdline_processor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_cmdline_processor.svh
+0 tlm1/uvm_tlm.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_tlm.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_tlm.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_tlm.svh
+0 tlm1/uvm_tlm_ifs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_tlm_ifs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_tlm_ifs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_tlm_ifs.svh
+0 tlm1/uvm_sqr_ifs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_sqr_ifs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_sqr_ifs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_sqr_ifs.svh
+0 base/uvm_port_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/base/uvm_port_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/base/uvm_port_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/base/uvm_port_base.svh
+0 tlm1/uvm_imps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_imps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_imps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_imps.svh
+0 tlm1/uvm_ports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_ports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_ports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_ports.svh
+0 tlm1/uvm_exports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_exports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_exports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_exports.svh
+0 tlm1/uvm_analysis_port.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_analysis_port.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_analysis_port.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_analysis_port.svh
+0 tlm1/uvm_tlm_fifo_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_tlm_fifo_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_tlm_fifo_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_tlm_fifo_base.svh
+0 tlm1/uvm_tlm_fifos.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_tlm_fifos.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_tlm_fifos.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_tlm_fifos.svh
+0 tlm1/uvm_tlm_req_rsp.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_tlm_req_rsp.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_tlm_req_rsp.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_tlm_req_rsp.svh
+0 tlm1/uvm_sqr_connections.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm1/uvm_sqr_connections.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm1/uvm_sqr_connections.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm1/uvm_sqr_connections.svh
+0 comps/uvm_comps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_comps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_comps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_comps.svh
+0 comps/uvm_pair.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_pair.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_pair.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_pair.svh
+0 comps/uvm_policies.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_policies.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_policies.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_policies.svh
+0 comps/uvm_in_order_comparator.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_in_order_comparator.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_in_order_comparator.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_in_order_comparator.svh
+0 comps/uvm_algorithmic_comparator.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_algorithmic_comparator.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_algorithmic_comparator.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_algorithmic_comparator.svh
+0 comps/uvm_random_stimulus.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_random_stimulus.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_random_stimulus.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_random_stimulus.svh
+0 comps/uvm_subscriber.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_subscriber.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_subscriber.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_subscriber.svh
+0 comps/uvm_monitor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_monitor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_monitor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_monitor.svh
+0 comps/uvm_driver.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_driver.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_driver.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_driver.svh
+0 comps/uvm_push_driver.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_push_driver.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_push_driver.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_push_driver.svh
+0 comps/uvm_scoreboard.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_scoreboard.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_scoreboard.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_scoreboard.svh
+0 comps/uvm_agent.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_agent.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_agent.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_agent.svh
+0 comps/uvm_env.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_env.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_env.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_env.svh
+0 comps/uvm_test.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/comps/uvm_test.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/comps/uvm_test.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/comps/uvm_test.svh
+0 seq/uvm_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/seq/uvm_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/seq/uvm_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/seq/uvm_seq.svh
+0 seq/uvm_sequence_item.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/seq/uvm_sequence_item.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/seq/uvm_sequence_item.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/seq/uvm_sequence_item.svh
+0 seq/uvm_sequencer_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/seq/uvm_sequencer_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/seq/uvm_sequencer_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/seq/uvm_sequencer_base.svh
+0 seq/uvm_sequencer_analysis_fifo.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/seq/uvm_sequencer_analysis_fifo.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/seq/uvm_sequencer_analysis_fifo.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/seq/uvm_sequencer_analysis_fifo.svh
+0 seq/uvm_sequencer_param_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/seq/uvm_sequencer_param_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/seq/uvm_sequencer_param_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/seq/uvm_sequencer_param_base.svh
+0 seq/uvm_sequencer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/seq/uvm_sequencer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/seq/uvm_sequencer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/seq/uvm_sequencer.svh
+0 seq/uvm_push_sequencer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/seq/uvm_push_sequencer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/seq/uvm_push_sequencer.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/seq/uvm_push_sequencer.svh
+0 seq/uvm_sequence_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/seq/uvm_sequence_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/seq/uvm_sequence_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/seq/uvm_sequence_base.svh
+0 seq/uvm_sequence.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/seq/uvm_sequence.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/seq/uvm_sequence.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/seq/uvm_sequence.svh
+0 seq/uvm_sequence_library.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/seq/uvm_sequence_library.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/seq/uvm_sequence_library.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/seq/uvm_sequence_library.svh
+0 seq/uvm_sequence_builtin.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/seq/uvm_sequence_builtin.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/seq/uvm_sequence_builtin.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/seq/uvm_sequence_builtin.svh
+0 tlm2/uvm_tlm2.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm2/uvm_tlm2.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm2/uvm_tlm2.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm2/uvm_tlm2.svh
+0 tlm2/uvm_tlm2_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm2/uvm_tlm2_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm2/uvm_tlm2_defines.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm2/uvm_tlm2_defines.svh
+0 tlm2/uvm_tlm2_time.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm2/uvm_tlm2_time.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm2/uvm_tlm2_time.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm2/uvm_tlm2_time.svh
+0 tlm2/uvm_tlm2_generic_payload.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm2/uvm_tlm2_generic_payload.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm2/uvm_tlm2_generic_payload.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm2/uvm_tlm2_generic_payload.svh
+0 tlm2/uvm_tlm2_ifs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm2/uvm_tlm2_ifs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm2/uvm_tlm2_ifs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm2/uvm_tlm2_ifs.svh
+0 tlm2/uvm_tlm2_imps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm2/uvm_tlm2_imps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm2/uvm_tlm2_imps.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm2/uvm_tlm2_imps.svh
+0 tlm2/uvm_tlm2_ports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm2/uvm_tlm2_ports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm2/uvm_tlm2_ports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm2/uvm_tlm2_ports.svh
+0 tlm2/uvm_tlm2_exports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm2/uvm_tlm2_exports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm2/uvm_tlm2_exports.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm2/uvm_tlm2_exports.svh
+0 tlm2/uvm_tlm2_sockets_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm2/uvm_tlm2_sockets_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm2/uvm_tlm2_sockets_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm2/uvm_tlm2_sockets_base.svh
+0 tlm2/uvm_tlm2_sockets.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/tlm2/uvm_tlm2_sockets.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/tlm2/uvm_tlm2_sockets.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/tlm2/uvm_tlm2_sockets.svh
+0 reg/uvm_reg_model.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_model.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_model.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_model.svh
+0 reg/uvm_reg_item.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_item.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_item.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_item.svh
+0 reg/uvm_reg_adapter.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_adapter.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_adapter.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_adapter.svh
+0 reg/uvm_reg_predictor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_predictor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_predictor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_predictor.svh
+0 reg/uvm_reg_sequence.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_sequence.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_sequence.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_sequence.svh
+0 reg/uvm_reg_cbs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_cbs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_cbs.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_cbs.svh
+0 reg/uvm_reg_backdoor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_backdoor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_backdoor.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_backdoor.svh
+0 reg/uvm_reg_field.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_field.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_field.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_field.svh
+0 reg/uvm_vreg_field.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_vreg_field.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_vreg_field.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_vreg_field.svh
+0 reg/uvm_reg.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg.svh
+0 reg/uvm_reg_indirect.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_indirect.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_indirect.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_indirect.svh
+0 reg/uvm_reg_fifo.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_fifo.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_fifo.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_fifo.svh
+0 reg/uvm_reg_file.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_file.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_file.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_file.svh
+0 reg/uvm_mem_mam.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_mem_mam.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_mem_mam.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_mem_mam.svh
+0 reg/uvm_vreg.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_vreg.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_vreg.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_vreg.svh
+0 reg/uvm_mem.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_mem.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_mem.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_mem.svh
+0 reg/uvm_reg_map.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_map.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_map.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_map.svh
+0 reg/uvm_reg_block.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/uvm_reg_block.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/uvm_reg_block.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/uvm_reg_block.svh
+0 reg/sequences/uvm_reg_hw_reset_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/sequences/uvm_reg_hw_reset_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/sequences/uvm_reg_hw_reset_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/sequences/uvm_reg_hw_reset_seq.svh
+0 reg/sequences/uvm_reg_bit_bash_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/sequences/uvm_reg_bit_bash_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/sequences/uvm_reg_bit_bash_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/sequences/uvm_reg_bit_bash_seq.svh
+0 reg/sequences/uvm_mem_walk_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/sequences/uvm_mem_walk_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/sequences/uvm_mem_walk_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/sequences/uvm_mem_walk_seq.svh
+0 reg/sequences/uvm_mem_access_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/sequences/uvm_mem_access_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/sequences/uvm_mem_access_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/sequences/uvm_mem_access_seq.svh
+0 reg/sequences/uvm_reg_access_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/sequences/uvm_reg_access_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/sequences/uvm_reg_access_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/sequences/uvm_reg_access_seq.svh
+0 reg/sequences/uvm_reg_mem_shared_access_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/sequences/uvm_reg_mem_shared_access_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/sequences/uvm_reg_mem_shared_access_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/sequences/uvm_reg_mem_shared_access_seq.svh
+0 reg/sequences/uvm_reg_mem_built_in_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/sequences/uvm_reg_mem_built_in_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/sequences/uvm_reg_mem_built_in_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/sequences/uvm_reg_mem_built_in_seq.svh
+0 reg/sequences/uvm_reg_mem_hdl_paths_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh
+0 reg/snps_uvm_reg_bank.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/reg/snps_uvm_reg_bank.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/reg/snps_uvm_reg_bank.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/reg/snps_uvm_reg_bank.svh
+0 msglog.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/msglog.svh
+0 uvm_msglog_report_server.sv
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/uvm_msglog_report_server.sv
+0 uvm_vcs_recorder.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/uvm_vcs_recorder.svh
+0 uvm_vcs_record_interface.sv
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/uvm_vcs_record_interface.sv
+0 uvm_verdi_recorder.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/uvm_verdi_recorder.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_verdi_recorder.svh
+0 uvm_verdi_pli_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/uvm_verdi_pli_base.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_verdi_pli_base.svh
+0 uvm_verdi_reg_map_recording.sv
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/uvm_verdi_reg_map_recording.sv
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_verdi_reg_map_recording.sv
+0 uvm_verdi_message_catcher.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/uvm_verdi_message_catcher.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_verdi_message_catcher.svh
+0 ./dpi/uvm_verdi_dpi.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/./dpi/uvm_verdi_dpi.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/./dpi/uvm_verdi_dpi.svh
+0 uvm_verdi_reg_recording.sv
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/uvm_verdi_reg_recording.sv
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_verdi_reg_recording.sv
+0 uvm_verdi_pli.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/systemverilog/uvm_verdi_pli.svh
+0 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_verdi_pli.svh
+43
++define+UVM_DIRECTC_OPTS
++define+UVM_VCS_RECORD
++define+UVM_VERDI_VIF_RECORD
++incdir+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/
++incdir+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs
++incdir+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi
++itf+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/vcsdp_lite.tab
++vcs+lic+wait
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/dpi/uvm_dpi.cc /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/dpi/uvm_verdi_dpi.cpp
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libvirsim.so /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/liberrorinf.so /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libsnpsmalloc.so /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libvfs.so
+-Mout=uvm_lib_simv
+-Msaverestoreobj=/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/share/instsww/synopsys-new/verdi/T-2022.06-SP2//share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -I/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/include
+-P
+-debug_access+all
+-fsdb
+-full64
+-gen_obj
+-ntb_opts
+-o uvm_lib_simv
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm-1.2/src/uvm_pkg.sv
+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/uvm_pkg.sv
+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv
+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv
+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/bin/vcs1
+/share/instsww/synopsys-new/verdi/T-2022.06-SP2//share/PLI/VCS/LINUX64/verdi.tab
+uvm
+122
+which_declare=declare -f
+_CE_M=
+_CE_CONDA=
+XML_CATALOG_FILES=file:///scratch/ee198-20-aad/conda/etc/xml/catalog file:///etc/xml/catalog file:///scratch/ee198-20-aad/conda/etc/xml/catalog file:///etc/xml/catalog
+XDG_SESSION_ID=4358
+XDG_RUNTIME_DIR=/run/user/45752
+XDG_DATA_DIRS=/home/cc/ee198-20/sp25/class/ee198-20-aad/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XA_HOME=/home/ff/eecs151/tools/xa/G-2012.06-SP2
+XA_64=1
+VSCODE_IPC_HOOK_CLI=/run/user/45752/vscode-ipc-7f50fa06-c7bd-4dc5-ba7f-b5b61d9db12e.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/45752/vscode-git-3454eeff6d.sock
+VSCODE_GIT_ASKPASS_NODE=/home/cc/ee198-20/sp25/class/ee198-20-aad/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/node
+VSCODE_GIT_ASKPASS_MAIN=/home/cc/ee198-20/sp25/class/ee198-20-aad/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=/home/cc/ee198-20/sp25/class/ee198-20-aad/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-2c783d3dd736ee87.txt
+VMR_MODE_FLAG=64
+VIRTUAL_ENV_PROMPT=(venv_151) 
+VIRTUAL_ENV=/home/cc/ee198-20/sp25/class/ee198-20-aad/venv_151
+VERDI_HOME=/share/instsww/synopsys-new/verdi/T-2022.06-SP2/
+VCS_UVM_HOME=/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm
+VCS_PATH=/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/bin
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+USE_CALIBRE_VCO=aok
+UNAME=/bin/uname
+UCB_VLSI_HOME=/home/ff/eecs151
+UCB_VLSI_HOME2=/home/ff/eecs151
+UCB_STDCELLS=synopsys-32nm/multi_vt
+TOOL_HOME=/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64
+TERM_PROGRAM_VERSION=1.99.0
+TERM_PROGRAM=vscode
+S_COLORS=auto
+SYNOPSYS_SYSTYPE=linux
+SYNOPSYS_ROOT=/home/ff/cs250/tools/synopsys
+SYNOPSYS_NCX_ROOT=/home/ff/eecs151/tools/ncx/G-2012.06-SP3
+STAR_HOME=/home/ff/eecs151/tools/starrcxt/G-2012.06-SP3
+SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+SSL_CERT_DIR=/etc/pki/tls/certs
+SSH_CONNECTION=136.152.28.77 65476 128.32.42.144 22
+SSH_CLIENT=136.152.28.77 65476 22
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+RUNAS=/share/b/runas/x86_64
+PYDEVD_DISABLE_FILE_VALIDATION=1
+PT_PATH=/home/ff/cs250/tools/synopsys/pt/current/bin
+PT_HOME=/home/ff/cs250/tools/synopsys/pt/current
+OVA_UUM=0
+OS=Linux
+OA_UNSUPPORTED_PLAT=linux_rhel50_gcc48x
+NCX_HOME=/home/ff/eecs151/tools/ncx/G-2012.06-SP3
+MW_PATH=/home/ff/cs250/tools/synopsys/mw/current/bin/AMD.64
+MW_HOME=/home/ff/cs250/tools/synopsys/mw/current
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+MODULESHOME=/usr/share/Modules
+MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+MODULEPATH=/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+MGLS_LICENSE_FILE=1717@license-srv.eecs.berkeley.edu
+MFLAGS=
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=
+LM_PROJECT=bwrc_users
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+IPDK_SYN_28NM=/home/ff/eecs151/synopsys-32nm
+INV_PATH=/share/instsww/cadence/INNOVUS/bin
+INV_HOME=/share/instsww/cadence/INNOVUS
+INSTALLER_PATH=/home/ff/cs250/tools/synopsys/installer/current
+ICC_PATH=/home/ff/eecs151/tools/icc/bin
+ICC_HOME=/home/ff/eecs151/tools/icc
+HSP_HOME=/home/ff/eecs151/tools/hspice/G-2012.06-SP1/hspice
+HSPICE_HOME=/home/ff/eecs151/tools/hspice/G-2012.06-SP1
+HISTCONTROL=ignoredups
+HERCULES_HOME_DIR=/home/ff/eecs151/tools/hercules/B-2008.09-SP5
+GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+GSETTINGS_SCHEMA_DIR=/scratch/ee198-20-aad/ofot-chipyard/.conda-lock-env/share/glib-2.0/schemas
+GIT_ASKPASS=/home/cc/ee198-20/sp25/class/ee198-20-aad/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/extensions/git/dist/askpass.sh
+GEN_PATH=/share/instsww/cadence/GENUS/bin
+GEN_HOME=/share/instsww/cadence/GENUS
+FORMALITY_HOME=/home/ff/cs250/tools/synopsys/fm/current
+FORMALITY_BIN=/home/ff/cs250/tools/synopsys/fm/current/bin
+DC_PATH=/share/instsww/synopsys/J-2014.09-SP3/bin
+DC_HOME=/share/instsww/synopsys/J-2014.09-SP3
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/45752/bus
+CVS_RSH=ssh
+CONDA_SHLVL=2
+CONDA_ROOT=/scratch/ee198-20-aad/conda
+CONDA_PYTHON_EXE=/scratch/ee198-20-aad/conda/bin/python
+CONDA_PROMPT_MODIFIER=(/scratch/ee198-20-aad/ofot-chipyard/.conda-lock-env) 
+CONDA_PREFIX_2=/scratch/ee198-20-aad/ofot-chipyard/.conda-lock-env
+CONDA_PREFIX_1=/scratch/ee198-20-aad/conda
+CONDA_PREFIX=/scratch/ee198-20-aad/ofot-chipyard/.conda-lock-env
+CONDA_EXE=/scratch/ee198-20-aad/conda/bin/conda
+CONDA_DEFAULT_ENV=/scratch/ee198-20-aad/ofot-chipyard/.conda-lock-env
+COLORTERM=truecolor
+CHISEL=/home/ff/cs250/install/chisel
+CDS_ROOT=/share/instsww/cadence/IC615.151
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CSF
+CDS_LIC_FILE=5280@license-srv.eecs.berkeley.edu
+CDS_INST_DIR=/share/instsww/cadence/IC615.151
+CDSHOME=/share/instsww/cadence/IC615.151
+CALIBRE_PATH=/share/instsww/mgc/calibre2024/aok_cal_2024.3_16.10/bin
+CALIBRE_HOME=/share/instsww/mgc/calibre2024/aok_cal_2024.3_16.10
+BUNDLED_DEBUGPY_PATH=/home/cc/ee198-20/sp25/class/ee198-20-aad/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;_ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then_ typeset swname='main';_ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then_ typeset swfound=0;_ unset MODULES_USE_COMPAT_VERSION;_ fi;_ else_ typeset swname='compatibility';_ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then_ typeset swfound=0;_ MODULES_USE_COMPAT_VERSION=1;_ export MODULES_USE_COMPAT_VERSION;_ fi;_ fi;_ if [ $swfound -eq 0 ]; then_ echo "Switching to Modules $swname version";_ source /usr/share/Modules/init/bash;_ else_ echo "Cannot switch to Modules $swname version, command not found";_ return 1;_ fi_}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
+BASH_FUNC_module%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
+BASH_FUNC_ml%%=() {  module ml "$@"_}
+ARCH=x86_64
+AGILEESOFD_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
+ADS_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
+0
+152
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/uvm_verdi_pli.svh
+1669114307 /share/instsww/synopsys-new/verdi/T-2022.06-SP2//share/PLI/VCS/include/verdi_trans_recorder_dpi.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/uvm_verdi_reg_recording.sv
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/./dpi/uvm_verdi_dpi.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/uvm_verdi_message_catcher.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/uvm_verdi_reg_map_recording.sv
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/uvm_verdi_pli_base.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/uvm_verdi_recorder.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_vcs_record_interface.sv
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_vcs_recorder.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_msglog_report_server.sv
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/msglog.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/snps_uvm_reg_bank.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/sequences/uvm_reg_mem_built_in_seq.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/sequences/uvm_reg_mem_shared_access_seq.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/sequences/uvm_reg_access_seq.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/sequences/uvm_mem_access_seq.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/sequences/uvm_mem_walk_seq.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/sequences/uvm_reg_bit_bash_seq.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/sequences/uvm_reg_hw_reset_seq.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_block.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_map.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_mem.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_vreg.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_mem_mam.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_file.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_fifo.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_indirect.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_vreg_field.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_field.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_backdoor.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_cbs.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_sequence.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_predictor.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_adapter.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_item.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/reg/uvm_reg_model.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm2/uvm_tlm2_sockets.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm2/uvm_tlm2_sockets_base.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm2/uvm_tlm2_exports.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm2/uvm_tlm2_ports.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm2/uvm_tlm2_imps.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm2/uvm_tlm2_ifs.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm2/uvm_tlm2_generic_payload.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm2/uvm_tlm2_time.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm2/uvm_tlm2_defines.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm2/uvm_tlm2.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/seq/uvm_sequence_builtin.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/seq/uvm_sequence_library.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/seq/uvm_sequence.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/seq/uvm_sequence_base.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/seq/uvm_push_sequencer.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/seq/uvm_sequencer.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/seq/uvm_sequencer_param_base.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/seq/uvm_sequencer_analysis_fifo.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/seq/uvm_sequencer_base.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/seq/uvm_sequence_item.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/seq/uvm_seq.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_test.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_env.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_agent.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_scoreboard.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_push_driver.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_driver.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_monitor.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_subscriber.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_random_stimulus.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_algorithmic_comparator.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_in_order_comparator.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_policies.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_pair.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/comps/uvm_comps.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_sqr_connections.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_tlm_req_rsp.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_tlm_fifos.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_tlm_fifo_base.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_analysis_port.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_exports.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_ports.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_imps.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_port_base.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_sqr_ifs.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_tlm_ifs.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_tlm.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_cmdline_processor.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_globals.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_heartbeat.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_objection.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_root.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_component.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_runtime_phases.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_common_phases.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_task_phase.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_topdown_phase.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_bottomup_phase.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_domain.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_phase.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_transaction.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_report_object.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_report_handler.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_report_server.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_report_catcher.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_callback.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_barrier.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_event.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_event_callback.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_recorder.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_packer.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_comparer.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_printer.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_config_db.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_resource_db.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_resource_specializations.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/deprecated/uvm_resource_converter.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_resource.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_spell_chkr.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_registry.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_factory.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_queue.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_pool.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_object.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_misc.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_object_globals.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_version.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/base/uvm_base.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/dpi/uvm_regex.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/dpi/uvm_svcmd_dpi.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/dpi/uvm_hdl.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/dpi/uvm_dpi.svh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/directc/uvm_seed.vh
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/directc/uvm_directc.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/macros/uvm_deprecated_defines.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/macros/uvm_reg_defines.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/macros/uvm_callback_defines.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/macros/uvm_sequence_defines.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/tlm1/uvm_tlm_imps.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/macros/uvm_tlm_defines.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/macros/uvm_printer_defines.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/macros/uvm_object_defines.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/macros/uvm_phase_defines.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/macros/uvm_message_defines.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/macros/uvm_version_defines.svh
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/uvm_macros.svh
+1559368586 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm-1.2/src/uvm_pkg.sv
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/uvm_pkg.sv
+1669114307 /share/instsww/synopsys-new/verdi/T-2022.06-SP2//share/PLI/VCS/LINUX64/verdi.tab
+1559359020 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/vcsdp_lite.tab
+6
+1559368584 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/dpi/uvm_dpi.cc
+1559368585 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm/verdi/dpi/uvm_verdi_dpi.cpp
+1559360489 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libvirsim.so
+1559360051 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/liberrorinf.so
+1559360008 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libsnpsmalloc.so
+1559360050 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libvfs.so
+1745753313 uvm_lib_simv.daidir
+-1 partitionlib

@@ -417,6 +417,254 @@ $(SRAM_CONF) srams:
 # general cleanup rule
 #########################################################################################
 # Don't remove the extracted PDK dir, otherwise we have to build it again
-.PHONY: clean
+# .PHONY: clean
+# clean:
+# 	rm -rf $(HAMMER_D_MK) $(OBJ_DIR)/*rundir $(OBJ_DIR)/*.json hammer-vlsi*.log __pycache__ output.json *_output
+
+
+
+
+
+# # UVM
+# .PHONY: sim-rtl-uvm
+# sim-rtl-uvm: $(HAMMER_D_MK)
+# 	$(HAMMER_EXEC) -e $(ENV_YML) -p $(TECH_CONF) -p $(SRAM_CONF) -p $(vlsi_dir)/sim-rtl-uvm.yml --obj_dir $(OBJ_DIR) sim
+# 	make run_uvm
+
+# .PHONY: run_uvm
+# run_uvm:
+# 	cd $(sim_dir) && $(exec_simv) +ntb_random_seed_automatic +UVM_TESTNAME=$(TEST_NAME) +verbose
+
+
+
+CS_HOME = /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06
+VCS = $(VCS_HOME)/bin/vcs
+
+RTL_DIR = build/rtl_lib
+TB_DIR = build/tb_lib
+
+# RTL Source (.v files)
+VFILES = \
+  src/ALU.v \
+  src/ALUdec.v \
+  src/Riscv151.v \
+  src/Memory151.v \
+  src/ExtMemModel.v \
+  src/no_cache_mem.v \
+  src/riscv_top.v \
+  src/riscv_arbiter.v \
+  src/EECS151.v \
+  src/BranchComp.v \
+  src/CSdec.v \
+  src/ImmGen.v \
+  src/LoadMask.v \
+  src/Mux2to1.v \
+  src/Mux3to1.v \
+  src/Pipe_reg.v \
+  src/Program_Counter.v \
+  src/RegFile.v \
+  src/StoreMask.v \
+  src/CSR.v \
+  src/RstReg.v
+
+# UVM Sources (.sv files)
+SEQ_ITEM = uvm/riscv_seq_item.sv
+UVM_PKG = uvm/riscv_uvm_pkg.sv
+RISC_IF = uvm/riscv_if.sv
+TB_TOP = src/riscv_top_tb.sv
+
+# build targets
+UVM:
+	$(VCS) -full64 -sverilog -ntb_opts uvm \
+	-timescale=1ns/1ps \
+	-notice \
+	-line \
+	+lint=all,noVCDE,noONGS,noUI\
+	+warn=noTMR \
+	-error=PCWM-L \
+	+v2k \
+	-debug \
+	+vcs+initreg+random \
+	+define+no_cache_mem \
+	+rad \
+	-quiet \
+	+define+DEBUG \
+	+vcs+lic+wait -debug_access+all \
+	-Mdir=build/simv.csrc \
+	-o simv \
+	+incdir+src \
+	+incdir+uvm \
+	+incdir+$(VCS_HOME)/etc/uvm-1.2/src \
+	$(VCS_HOME)/etc/uvm-1.2/src/uvm_pkg.sv \
+	$(VFILES) \
+	$(SEQ_ITEM) $(RISC_IF) $(UVM_PKG) $(TB_TOP)
+
+uvmlibrary:
+	$(VCS) -full64 -sverilog -ntb_opts uvm \
+	-timescale=1ns/1ps \
+	+vcs+lic+wait -debug_access+all \
+	-o uvm_lib_simv \
+	$(VCS_HOME)/etc/uvm-1.2/src/uvm_pkg.sv
+
+rtl:
+	mkdir -p $(RTL_DIR) 
+	$(VCS) -full64 -sverilog -ntb_opts uvm \
+	-timescale=1ns/1ps \
+	+vcs+lic+wait -debug_access+all \
+	-Mdir=$(RTL_DIR) \
+	-work design_lib \
+	+incdir+src \
+	+incdir+uvm \
+	+define+no_cache_mem \
+	-o simv \
+	$(VFILES) 
+
+uvm_comp:
+	mkdir -p $(TB_DIR)
+	$(VCS) -full64 -sverilog -ntb_opts uvm \
+	-timescale=1ns/1ps \
+	+vcs+lic+wait -debug_access+all \
+	-Mdir=$(TB_DIR) \
+	-y $(RTL_DIR) \
+	+incdir+src \
+	+incdir+uvm \
+	$(SEQ_ITEM) \
+	$(RISC_IF) \
+	$(UVM_PKG) \
+	$(VFILES) \
+	$(TB_TOP)
+
+
+# UVM_IF = uvm/riscv_if.sv
+# UVM_SEQ_ITEM = uvm/riscv_seq_item.sv
+# UVM_PKG = uvm/riscv_uvm_pkg.sv
+# TOP = src/riscv_top_tb.sv
+
+# all:
+# 	$(VCS) -full64 -sverilog -sv -ntb_opts uvm \
+# 	-timescale=1ns/1ps \
+# 	-debug_access+all \
+# 	+vcs+lic+wait \
+# 	-Mdir=simv.csrc \
+# 	-o simv \
+# 	+incdir+src \
+# 	+incdir+uvm \
+# 	+incdir+$(VCS_HOME)/etc/uvm-1.2/src \
+# 	$(VCS_HOME)/etc/uvm-1.2/src/uvm_pkg.sv \
+# 	$(UVM_SEQ_ITEM) \
+# 	$(UVM_PKG) \
+# 	$(UVM_IF) \
+# 	$(SRC) \
+# 	$(TOP)
+
+run_UVM_test:
+	./simv +UVM_TESTNAME=riscv_test +ntb_random_seed=1 | tee simv.log
+
 clean:
-	rm -rf $(HAMMER_D_MK) $(OBJ_DIR)/*rundir $(OBJ_DIR)/*.json hammer-vlsi*.log __pycache__ output.json *_output
+	rm -rf simv simv.daidir simv.csrc ucli.key *.log *.vpd *.vcd
+
+
+
+# VCS_HOME = /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06
+# VCS = $(VCS_HOME)/bin/vcs
+
+# RTL_DIR = build/rtl_lib
+# TB_DIR = build/tb_lib
+# # RTL Source (.v files)
+# VFILES = \
+#   src/ALU.v \
+#   src/ALUdec.v \
+#   src/Riscv151.v \
+#   src/Memory151.v \
+#   src/ExtMemModel.v \
+#   src/no_cache_mem.v \
+#   src/riscv_top.v \
+#   src/riscv_arbiter.v \
+#   src/EECS151.v \
+#   src/BranchComp.v \
+#   src/CSdec.v \
+#   src/ImmGen.v \
+#   src/LoadMask.v \
+#   src/Mux2to1.v \
+#   src/Mux3to1.v \
+#   src/Pipe_reg.v \
+#   src/Program_Counter.v \
+#   src/RegFile.v \
+#   src/StoreMask.v \
+#   src/CSR.v \
+#   src/RstReg.v
+
+# # UVM Sources (.sv files)
+# SEQ_ITEM = uvm/riscv_seq_item.sv
+# UVM_PKG = uvm/riscv_uvm_pkg.sv
+# RISC_IF = uvm/riscv_if.sv
+# TB_TOP = src/riscv_top_tb.sv
+
+# # build targets
+# all:
+# 	$(VCS) -full64 -sverilog -ntb_opts uvm \
+# 	-timescale=1ns/1ps \
+# 	+vcs+lic+wait -debug_access+all \
+# 	-Mdir=build/simv.csrc \
+# 	-o simv \
+# 	+incdir+src \
+# 	+incdir+uvm \
+# 	+incdir+$(VCS_HOME)/etc/uvm-1.2/src \
+# 	$(VCS_HOME)/etc/uvm-1.2/src/uvm_pkg.sv \
+# 	$(VFILES) \
+# 	$(SEQ_ITEM) $(RISC_IF) $(UVM_PKG) $(TB_TOP)
+
+# uvmlibrary:
+# 	$(VCS) -full64 -sverilog -ntb_opts uvm \
+# 	-timescale=1ns/1ps \
+# 	+vcs+lic+wait -debug_access+all \
+# 	-o uvm_lib_simv \
+# 	$(VCS_HOME)/etc/uvm-1.2/src/uvm_pkg.sv
+
+# rtl:
+# 	mkdir -p $(RTL_DIR) 
+# 	$(VCS) -full64 -sverilog -ntb_opts uvm \
+# 	-timescale=1ns/1ps \
+# 	+vcs+lic+wait -debug_access+all \
+# 	-Mdir=$(RTL_DIR) \
+# 	-work design_lib \
+# 	+incdir+src \
+# 	+incdir+uvm \
+# 	+define+no_cache_mem \
+# 	-o simv \
+# 	$(VFILES) 
+
+# uvm_comp:
+# 	mkdir -p $(TB_DIR)
+# 	$(VCS) -full64 -sverilog -ntb_opts uvm \
+# 	-timescale=1ns/1ps \
+# 	+vcs+lic+wait -debug_access+all \
+# 	-Mdir=$(TB_DIR) \
+# 	-y $(RTL_DIR) \
+# 	+incdir+src \
+# 	+incdir+uvm \
+# 	$(SEQ_ITEM) \
+# 	$(RISC_IF) \
+# 	$(UVM_PKG) \
+# 	$(VFILES) \
+# 	$(TB_TOP)
+
+
+# # riscv_if:
+# # 	$(VCS) -full64 -sverilog -ntb_opts uvm \
+# # 	-timescale=1ns/1ps \
+# # 	+vcs+lic+wait -debug_access+all \
+# # 	+incdir+src \
+# # 	+incdir+uvm \
+# # 	-o riscv_if_simv \
+# # 	$(RISC_IF)
+
+
+
+
+# run:
+# 	./simv +UVM_TESTNAME=riscv_test +ntb_random_seed=1 | tee simv.log
+
+clean:
+	rm -rf simv simv.daidir simv.csrc *.log *.vpd *.vcd ucli.key \
+	       uvm_lib_simv seq_item_simv riscv_uvm_pkg_simv riscv_if_simv

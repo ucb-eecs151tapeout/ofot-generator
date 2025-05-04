@@ -1,0 +1,67 @@
+simClockPeriod : &SIM_CLK_PERIOD "CLOCK_PERIOD=20.00"
+simOptions: &SIM_OPTIONS
+  - "-notice"
+  - "-line"
+  - "+lint=all,noVCDE,noONGS,noUI"
+  - "+warn=noTMR"
+  - "-error=PCWM-L"
+  - "+v2k"
+  - "-debug"
+  - "+vcs+lic+wait"
+  - "+vcs+initreg+random"
+  # - "-Mdir=../../build/simv.csrc"
+  # - "-o simv"
+  - "+define+DEBUG"
+  - "+incdir+../../src"
+  - "+incdir+../../uvm"
+  - "+incdir+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm-1.2/src"
+  - "-sverilog"
+  - "-ntb_opts uvm"
+
+simVerilogSrc: &SIM_VERILOG_SRC
+  - "/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/etc/uvm-1.2/src/uvm_pkg.sv"   # <<<< 第一行!!! 保證先compile
+
+  - "src/ALU.v"
+  - "src/ALUdec.v"
+  - "src/Riscv151.v"
+  - "src/Memory151.v"
+  - "src/ExtMemModel.v"
+  - "src/no_cache_mem.v"
+  - "src/Cache_ian.v"
+  - "src/riscv_top.v"
+  - "src/riscv_arbiter.v"
+
+  - "src/EECS151.v"
+  - "src/BranchComp.v"
+  - "src/CSdec.v"
+  - "src/ImmGen.v"
+  - "src/LoadMask.v"
+  - "src/Mux2to1.v"
+  - "src/Mux3to1.v"
+  - "src/Pipe_reg.v"
+  - "src/Program_Counter.v"
+  - "src/RegFile.v"
+  - "src/StoreMask.v"
+  - "src/CSR.v"
+  - "src/RstReg.v"
+
+  # Include the UVM package
+  - "uvm/riscv_seq_item.sv"
+  - "uvm/riscv_if.sv"  
+  
+  - "uvm/riscv_uvm_pkg.sv"   # <<<<<< 這個非常重要！
+
+  # Finally compile the testbench top
+  - "src/riscv_top_tb.sv"
+
+tb_name: &TB_NAME "riscv_top_tb"
+
+sim.inputs:
+  input_files: *SIM_VERILOG_SRC
+  timescale:   "1ns/1ps"
+  options:     *SIM_OPTIONS
+  top_module:  *TB_NAME
+  tb_name:     *TB_NAME
+  defines:
+    - *SIM_CLK_PERIOD
+  execute_sim: false

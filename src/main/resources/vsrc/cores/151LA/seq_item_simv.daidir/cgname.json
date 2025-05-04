@@ -1,0 +1,62 @@
+{
+    "_vcs_DPI_package": [
+        "_vcs_DPI_package",
+        "uM9F1",
+        "module",
+        6
+    ],
+    "uvm_custom_install_recording": [
+        "uvm_custom_install_recording",
+        "nhiwz",
+        "module",
+        9
+    ],
+    "vcs_paramclassrepository": [
+        "vcs_paramclassrepository",
+        "hEeZs",
+        "module",
+        1
+    ],
+    "uvm_pkg": [
+        "uvm_pkg",
+        "zr7M1",
+        "module",
+        3
+    ],
+    "_vcs_unit__3820934895": [
+        "_vcs_unit__3820934895",
+        "b4gw6",
+        "module",
+        7
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        2
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        4
+    ],
+    "_vcs_msglog": [
+        "_vcs_msglog",
+        "zQBzV",
+        "module",
+        8
+    ],
+    "uvm_custom_install_verdi_recording": [
+        "uvm_custom_install_verdi_recording",
+        "EbjT3",
+        "module",
+        10
+    ],
+    "riscv_seq_item_pkg": [
+        "riscv_seq_item_pkg",
+        "NkMw3",
+        "module",
+        5
+    ]
+}

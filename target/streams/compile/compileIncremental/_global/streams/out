@@ -1,6 +1,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
 [0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 16 products, 4 sources, 3 libraries[0m
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/generators/ofo/src/main/scala/OFOConfigs.scala, ${BASE}/generators/ofo/src/main/scala/OFOTile.scala, ${BASE}/generators/ofo/src/main/scala/OneFiftyOneCoreBlackBox.scala, ${BASE}/generators/ofo/src/main/scala/OneFiftyOneUtilities.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/generators/ofo/src/main/scala/OFOConfigs.scala, ${BASE}/generators/ofo/src/main/scala/OFOTile.scala, ${BASE}/generators/ofo/src/main/scala/OneFiftyOneUtilities.scala, ${BASE}/generators/ofo/src/main/scala/OneFiftyOneCoreBlackBox.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
