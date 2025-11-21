@@ -6,14 +6,15 @@
 
 # name of output pre-processed verilog file
 vsrc_dir =$(abspath ./)
-proj_name = kevin-kore
+# proj_name = kevin-kore
+proj_name = my-151-asic-project
 # TODO: better way  to do this
 #sram_dir = "/home/ff/eecs251b/sky130/sram22_sky130_macros"
 sram_dir = "/scratch/ee198-20-tab/sram22_sky130_macros" 
 
-  # this is tuning wmask to a wire rather than a 1 width bus in sram22_64x24m4w24 bc it is otherwise incompatible with the lib
-	# NOTE  for some reason it looks like it's inserting a space after sram_dir which breaks the paths. not sure why, manually fixing for now
-	# note this only works for sim, this causes the sram macros to not be placed if you try to run synthesis (bc it maps the sram modules to some trivial verilog)
+# this is tuning wmask to a wire rather than a 1 width bus in sram22_64x24m4w24 bc it is otherwise incompatible with the lib
+# NOTE  for some reason it looks like it's inserting a space after sram_dir which breaks the paths. not sure why, manually fixing for now
+# note this only works for sim, this causes the sram macros to not be placed if you try to run synthesis (bc it maps the sram modules to some trivial verilog)
 sram_include_str = "" # "\`include \"$(sram_dir)/sram22_256x32m4w8/sram22_256x32m4w8.v\"\n\`include \"$(sram_dir)/sram22_64x32m4w8/sram22_64x32m4w8.v\"\n\`include \"$(sram_dir)/sram22_512x64m4w8/sram22_512x64m4w8.v\"\n\`include \"$(sram_dir)/sram22_64x24m4w24/sram22_64x24m4w24.v\"\n"
 
 PREPROC_VERILOG = $(vsrc_dir)/$(proj_name).preprocessed.v

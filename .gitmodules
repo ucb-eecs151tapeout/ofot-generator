@@ -1,0 +1,3 @@
+[submodule "src/main/resources/vsrc/cores/my-151-asic-project"]
+	path = src/main/resources/vsrc/cores/my-151-asic-project
+	url = git@github.com:LouieLabata/my-151-asic-project.git
