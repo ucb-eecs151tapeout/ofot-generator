@@ -1,0 +1,3 @@
+[submodule "src/main/resources/vsrc/cores/asic-project-sp25-justinhoang-haoxu"]
+	path = src/main/resources/vsrc/cores/asic-project-sp25-justinhoang-haoxu
+	url = https://github.com/EECS-151/asic-project-sp25-justinhoang-haoxu.git
