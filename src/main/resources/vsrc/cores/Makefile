@@ -65,10 +65,6 @@ $(PREPROC_VERILOG): $(ALL_VSRCS)
 	touch combined.v
 	find $(ALL_VSRCS) | grep -iv test | xargs -I{} sh -c "cat {}; echo ''" >> combined.v
 
-# Unique-ify ALU module name which colides with rocketchip
-	sed -i 's/ALU ALU/custom_ALU custom_ALU/g' combined.v
-	sed -i 's/ALU(/custom_ALU(/g' combined.v
-
 # The riscv_top module name needs to match the Scala blackbox name
 	sed -i 's/module riscv_top/module OneFiftyOneCoreBlackBox/g' combined.v
 
@@ -107,6 +103,9 @@ $(PREPROC_VERILOG): $(ALL_VSRCS)
 # "FIXME FIXME FIXME getting into sketch hack territory here" - elam
 # This causes a width mismatch
 	sed -i 's/`define CACHE_DEPTH_BITS_IMEM 7/`define CACHE_DEPTH_BITS_IMEM 6/g' $@
+
+# HACKY: Unique-ify ALU module name which colides with rocketchip
+	sed -i 's/ALU/custom_ALU/g' $@
 
 	rm -rf combined.v
 
